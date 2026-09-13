@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { Geist } from "next/font/google";
 import "./globals.css";
-
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://atelier-lumina.example"),
@@ -28,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ro-RO" className={`${geist.variable} h-full antialiased`}>
+    <html lang="ro-RO" className="h-full antialiased">
       <body className="min-h-full bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
         <div className="app-bg" aria-hidden="true" />
         <div className="relative z-10 flex min-h-screen flex-col">
