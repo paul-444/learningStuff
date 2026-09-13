@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.app-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.24), transparent 38%),
+    radial-gradient(circle at 85% 15%, rgba(192, 132, 252, 0.22), transparent 34%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.18), transparent 32%);
+  filter: blur(14px);
+  pointer-events: none;
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.06)
+  );
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.35);
+}
+
+.glass-section {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(26px);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.38);
+}
