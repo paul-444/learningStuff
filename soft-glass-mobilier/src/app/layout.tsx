@@ -3,8 +3,10 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
+const siteUrl = "https://paul-444.github.io/learningStuff";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atelier-lumina.example"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Atelier Lumina | Mobilier premium",
     template: "%s | Atelier Lumina",
@@ -17,6 +19,7 @@ export const metadata: Metadata = {
       "Mobilier premium în stil contemporan. Comandă telefonic sau prin WhatsApp.",
     locale: "ro_RO",
     type: "website",
+    url: siteUrl,
   },
 };
 
